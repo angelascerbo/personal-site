@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 
 const Logo = (props) => {
   const { url, name, position, className, onHoverIn, onHoverOut } = props;
