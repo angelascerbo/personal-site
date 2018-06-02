@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Logo from './Logo';
+import Loading from './Loading';
 import { fadeIn } from './fadeIn';
 import './App.css';
 
@@ -50,34 +51,35 @@ class App extends Component {
           />
         )
       }; 
+
       const AnimatedComponent = fadeIn(component);
-      console.log(AnimatedComponent)
+
       return <AnimatedComponent key={i}/>;
     });
 
-    const app = isLoading ? 'Loading...' : (
-      <div>
-        <main>
-          <figure className="main-image">
-            <header>
-              <h4>hello,</h4>
-              <h1>I'm Angela</h1>
-              <div className="subtitle">
-                <h2>a software engineer building React apps in nyc. <span className="find-me">you can find me here:</span></h2>
-              </div>
-              <div className="logos-container">
-                { logoComponents }
-              </div>
-            </header>
-          </figure>
-        </main>
-      </div>
-    )
+    const app = isLoading ? 
+      (
+        <Loading/>
+      )
+      : (
+        <figure className="main-image">
+          <header>
+            <h4>hello,</h4>
+            <h1>I'm Angela</h1>
+            <div className="subtitle">
+              <h2>a software engineer building React apps in nyc. <span className="find-me">you can find me here:</span></h2>
+            </div>
+            <div className="logos-container">
+              { logoComponents }
+            </div>
+          </header>
+        </figure>
+      )
 
     return (
-      <div className="app">
+      <main className="app">
         { app }
-      </div>
+      </main>
     );
   }
 }
