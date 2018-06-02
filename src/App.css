@@ -1,16 +1,13 @@
 .app {
   height: 100vh;
+  width: 100%;
   color: #d8d8d8;
+  background-color: black;
 }
 
 header {
   font-family: 'Raleway', sans-serif;
-/*  flex-direction: column;
-  justify-content: space-between;
-  display: flex;
-  height: 20vh;*/
   padding: 10vh 20px;
-  /*background-color: #333;*/
   background: -moz-linear-gradient(top, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -40,8 +37,24 @@ h4 {
   font-weight: 400;
 }
 
+.loading-container {
+  position: absolute;  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.dot {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background-color: #a346d4;
+  opacity: 1;
+  left: -110px;
+}
+
 .subtitle {
-  /*height: 1.8em;*/
   margin: 1.3em 0;
 }
 
@@ -58,6 +71,10 @@ h4 {
 
 .logos-container a {
   color: #d8d8d8;
+}
+
+.logos-container a:hover {
+  color: #ca68fd;
 }
 
 .main-image {
@@ -86,8 +103,4 @@ h4 {
   .find-me {
     display: block;
   }
-
-/*  .subtitle {
-    height: 2em;
-  }*/
 }
