@@ -1,0 +1,93 @@
+.app {
+  height: 100vh;
+  color: #d8d8d8;
+}
+
+header {
+  font-family: 'Raleway', sans-serif;
+/*  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  height: 20vh;*/
+  padding: 10vh 20px;
+  /*background-color: #333;*/
+  background: -moz-linear-gradient(top, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+h1, 
+h2, 
+h3,
+h4 {
+  font-weight: 200;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2,
+h3,
+h4 {
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+.subtitle {
+  /*height: 1.8em;*/
+  margin: 1.3em 0;
+}
+
+.pipe {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+.logos-container i {
+  font-size: 2em;
+  margin-right: 1em;
+}
+
+.logos-container a {
+  color: #d8d8d8;
+}
+
+.main-image {
+  background-image: url('./merida-mexico-color-full-bw.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center; 
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+@media screen and (min-width: 769px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2,
+  h3,
+  h4 {
+    font-size: 1.3em;
+  }
+
+  .find-me {
+    display: block;
+  }
+
+/*  .subtitle {
+    height: 2em;
+  }*/
+}
