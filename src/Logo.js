@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Logo = (props) => {
-  const { url, name, position, className, onHoverIn, onHoverOut } = props;
+  const { url, name, position, className, onHoverIn } = props;
   return (
     <a href={url} title={name} target="_blank" onMouseEnter={onHoverIn}>
       <i 

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { findDOMNode } from 'react-dom';
+import React from 'react';
 import { TweenMax, SlowMo } from 'gsap';
 
 class Loading extends React.Component {
