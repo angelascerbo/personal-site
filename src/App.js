@@ -67,7 +67,7 @@ class App extends Component {
             <h4>hello,</h4>
             <h1>I'm Angela</h1>
             <div className="subtitle">
-              <h2>a software engineer building React apps in nyc. <span className="find-me">you can find me here:</span></h2>
+              <h2>a software engineer building React apps in Berlin. <span className="find-me">you can find me here:</span></h2>
             </div>
             <div className="logos-container">
               { logoComponents }
