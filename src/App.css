@@ -1,13 +1,16 @@
 .app {
-  height: 100vh;
   width: 100%;
   color: #d8d8d8;
   background-color: black;
+  position: relative;
 }
 
 header {
   font-family: 'Raleway', sans-serif;
-  padding: 10vh 20px;
+  position: fixed;
+  top: 0;
+  padding: 8% 20px;
+  width: 100%;
   background: -moz-linear-gradient(top, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
