@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100vw;
   /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  min-height: stretch;
   color: #d8d8d8;
   background-color: black;
   position: relative;
@@ -14,7 +14,7 @@ header {
   top: 0;
   width: 100%;
   /* mobile viewport bug fix */
-  max-width: -webkit-fill-available;
+  max-width: stretch;
   padding: 8% 20px;
   background: -moz-linear-gradient(top, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,.95) 55%, rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
